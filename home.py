@@ -18,4 +18,10 @@ def home():
 if __name__ == "__main__":
     app.run(debug=True,threaded=True)
 
+# To run this file, use the command: python home.py
+# To run the Flask app, make sure you have Flask installed in your environment.
+# You can install Flask using pip: pip install Flask
+# Make sure Kafka and MongoDB are running before starting this Flask app.
+
+
 
