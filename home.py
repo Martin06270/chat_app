@@ -10,8 +10,10 @@ app = Flask(__name__)
 app.secret_key = 'any random string'
 
 @app.route("/")
+@app.route("/home")
 def home():
-    return "Hi"
+    return render_template(home.html)
+
 
 # ip: localhost (127.0.0.1) and port 5000
 
