@@ -11,6 +11,7 @@ app.secret_key = 'any random string'
 
 @app.route("/")
 @app.route("/home")
+@app.route("/inscription")
 def home():
     return render_template(home.html)
 

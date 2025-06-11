@@ -1,22 +1,32 @@
+<!-- Déclaration du type de document HTML5 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Encodage des caractères en UTF-8 -->
     <meta charset="UTF-8">
+    <!-- Adaptation de la page à la taille de l’écran (responsive) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre de la page affiché dans l’onglet du navigateur -->
     <title>Inscription</title>
 </head>
 <body>
-    <form action="/register" method="post">
+    <!-- Formulaire d’inscription envoyé en POST à l’URL /inscription -->
+    <form action="/inscription" method="post">
         <h1>Inscription</h1>
+        <!-- Champ pour le nom d’utilisateur -->
         <label for="username">Nom d'utilisateur:</label><br>
         <input type="text" id="username" name="username" required><br><br>
 
+        <!-- Champ pour l’email -->
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email" required><br><br>
 
+        <!-- Champ pour le mot de passe -->
         <label for="password">Mot de passe:</label><br>
         <input type="password" id="password" name="password" required><br><br>
 
+        <!-- Bouton pour soumettre le formulaire -->
         <button type="submit">S'inscrire</button>
+    </form>
 </body>
 </html>
