@@ -13,8 +13,15 @@ app.secret_key = 'any random string'
 @app.route("/home")
 @app.route("/inscription")
 def home():
-    return render_template(home.html)
+    return render_template("home.html")
 
+@app.route("/inscription")
+def inscription():
+    return render_template("inscription.html") 
+
+@app.route("/connexion")
+def connexion():
+    return render_template("connexion.html")
 
 # ip: localhost (127.0.0.1) and port 5000
 
