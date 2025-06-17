@@ -15,11 +15,12 @@ app.secret_key = 'any random string'
 def home():
     return render_template("home.html")
 
-@app.route("/inscription")
+@app.route("/inscription", methods=['GET', 'POST'])
 def inscription():
     return render_template("inscription.html") 
 
-@app.route("/connexion")
+
+@app.route("/connexion", methods=['GET', 'POST'])
 def connexion():
     return render_template("connexion.html")
 
