@@ -19,6 +19,9 @@ def home():
 def inscription():
     return render_template("inscription.html") 
 
+@app.route("/inscription_check", methods=['GET', 'POST'])
+def inscription_check():
+    return render_template("inscription.html") 
 
 @app.route("/connexion", methods=['GET', 'POST'])
 def connexion():
