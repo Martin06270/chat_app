@@ -1,3 +1,5 @@
+# Importation des modules nécessaires
+
 from flask import Flask, render_template, url_for, request, redirect 
 from kafka import KafkaConsumer
 from kafka import KafkaProducer
@@ -6,9 +8,12 @@ import time
 import json 
 import pymongo
 
-app = Flask(__name__)
-app.secret_key = 'any random string'
+# Création de l'application Flask
 
+app = Flask(__name__)
+# Définition d'une clé secrète pour la gestion des sessions
+app.secret_key = 'any random string'
+# Définition des routes pour la page d'accueil et la page d'inscription
 @app.route("/")
 @app.route("/home")
 @app.route("/inscription")
