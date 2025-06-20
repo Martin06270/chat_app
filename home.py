@@ -19,8 +19,10 @@ app.secret_key = 'any random string'
 @app.route("/inscription")
 def home():
     return render_template("home.html")
-
+# Route pour la page d'accueil avec un message de bienvenue
 @app.route("/inscription", methods=['GET', 'POST'])
+
+# Route pour la page d'inscription
 def inscription():
     return render_template("inscription.html") 
 
@@ -33,7 +35,7 @@ def connexion():
     return render_template("connexion.html")
 
 # ip: localhost (127.0.0.1) and port 5000
-
+# Route pour la page de connexion
 if __name__ == "__main__":
     app.run(debug=True,threaded=True)
 
