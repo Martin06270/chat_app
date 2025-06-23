@@ -28,11 +28,19 @@ def inscription():
 
 @app.route("/inscription_check", methods=['GET', 'POST'])
 def inscription_check():
-    return render_template("inscription.html") 
+     if(request.method == 'POST'):
+       return render_template("dashboard.html")
+     return render_template("inscription.html") 
 
 @app.route("/connexion", methods=['GET', 'POST'])
 def connexion():
     return render_template("connexion.html")
+
+@app.route("/dashboard", methods=['GET', 'POST'])
+def dashboard():
+    return render_template("dashboard.html")
+# Route pour la page de tableau de bord
+
 
 # ip: localhost (127.0.0.1) and port 5000
 # Route pour la page de connexion
