@@ -15,7 +15,7 @@ app = Flask(__name__)
 app.secret_key = 'any random string'
 # Définition des routes pour la page d'accueil et la page d'inscription
 @app.route("/")
-@app.route("/home")
+@app.route("/home") 
 @app.route("/inscription")
 def home():
     return render_template("home.html")
